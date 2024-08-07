@@ -1,0 +1,23 @@
+{
+  "name": "momentum-admin-frontend",
+  "version": "0.0.1",
+  "description": "This is admin dashboard frontend subproject of Momentum.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramal-memmedli/momentum-admin-frontend.git"
+  },
+  "keywords": [
+    "momentum",
+    "blog",
+    "self-hosted",
+    "admin",
+    "dashboard",
+    "frontend"
+  ],
+  "author": "ramal-memmedli",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/ramal-memmedli/momentum-admin-frontend/issues"
+  },
+  "homepage": "https://github.com/ramal-memmedli/momentum-admin-frontend#readme"
+}
