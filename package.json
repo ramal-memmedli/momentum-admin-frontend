@@ -2,6 +2,13 @@
   "name": "momentum-admin-frontend",
   "version": "0.0.1",
   "description": "This is admin dashboard frontend subproject of Momentum.",
+  "scripts": {
+    "build": "npm run build:css && npm run copy",
+    "build:css": "postcss src/styles/tailwind.css -o build/css/tailwind.css",
+    "watch:scss": "sass --watch src/styles/:build/css",
+    "copy": "copyfiles -u 1 src/public/**/* build",
+    "start": "npm run build && npm run watch:scss & live-server --watch=build --no-browser --port=8080 build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ramal-memmedli/momentum-admin-frontend.git"
@@ -19,5 +26,13 @@
   "bugs": {
     "url": "https://github.com/ramal-memmedli/momentum-admin-frontend/issues"
   },
-  "homepage": "https://github.com/ramal-memmedli/momentum-admin-frontend#readme"
+  "homepage": "https://github.com/ramal-memmedli/momentum-admin-frontend#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "copyfiles": "^2.4.1",
+    "live-server": "^1.2.0",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.77.8",
+    "tailwindcss": "^3.4.7"
+  }
 }
